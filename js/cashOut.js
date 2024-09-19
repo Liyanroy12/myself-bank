@@ -8,6 +8,8 @@ document.getElementById('cash-out-money').addEventListener('click', function(eve
         const newBalance = parseFloat(balanceInput);
         const totalBlance = newBalance - newMoney;
         document.getElementById('balance').innerText = totalBlance;
+        document.getElementById('cash-out-money-from').value = '';
+        document.getElementById('cash-out-pin-from').value = '';
     }else{
         alert('Wrong number and pin"')
     }

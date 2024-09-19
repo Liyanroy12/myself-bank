@@ -8,6 +8,8 @@ document.getElementById('add-money').addEventListener('click', function(event){
         const newBalance = parseFloat(balanceInput);
         const totalBlance = newBalance + newMoney;
         document.getElementById('balance').innerText = totalBlance;
+        document.getElementById('add-money-from').value = '';
+        document.getElementById('add-pin-from').value = '';
     }else{
         alert('Wrong number and pin"')
     }
